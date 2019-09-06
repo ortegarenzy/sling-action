@@ -2,5 +2,6 @@ use eqela:slingbuild:r43
 set version ${date}
 
 default {
-	eqela:slingbuild runNetCore src=tests/ -output=output/
+	eqela:slingbuild buildEqelaPackageDllIncremental src=tests/ output=tests_output
+	exec tests_output/tests.dll
 }
