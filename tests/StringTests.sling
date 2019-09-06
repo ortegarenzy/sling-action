@@ -1,0 +1,14 @@
+class is UnitTest:
+
+import cape.unit
+
+func testStringOperations
+{
+	var str = "My Test String"
+	ASSERT(String.forInteger(12345) == "12345")
+}
+
+func execute override
+{
+	TEST("string operations", testStringOperations())
+}

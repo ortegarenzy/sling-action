@@ -1,0 +1,2 @@
+type = "console"
+imports += "cape.unit"

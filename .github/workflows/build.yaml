@@ -1,0 +1,9 @@
+name: Build and test sling app
+on: push
+jobs:
+  build:
+    name: Build and test sling app
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/checkout@master
+      - run: docker build .
